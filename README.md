@@ -1,11 +1,10 @@
-# 🧠 Companio AI - Mental Wellness Companion
-### *Hackathon Submission 2025*
+# Companio AI - Mental Wellness Companion
 
 **COMPANIO AI** is an advanced, empathetic AI companion designed to support mental wellness through real-time conversation, multimodal emotion detection, and personalized therapeutic rituals. It bridges the gap between casual journaling and professional therapy by providing immediate, data-driven emotional support.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 ### 1. **Multimodal Emotion Intelligence**
 - **Textual Analysis**: Uses a fine-tuned **GoEmotions** BERT model to detect subtle emotional nuances in user messages.
@@ -33,7 +32,7 @@ A suite of interactive, guided wellness activities designed to recalibrate emoti
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 - **Framework**: React (Vite) + TypeScript
@@ -51,7 +50,7 @@ A suite of interactive, guided wellness activities designed to recalibrate emoti
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v18+)
@@ -101,7 +100,7 @@ The application will be available at `http://localhost:5173`.
 
 ---
 
-## 🧠 AI Architecture
+## AI Architecture
 
 The core of Serenity AI is a **LangGraph** workflow that orchestrates the conversation:
 
@@ -119,7 +118,7 @@ The core of Serenity AI is a **LangGraph** workflow that orchestrates the conver
 
 ---
 
-## 🛡️ Safety
+## Safety
 - **Crisis Detection**: Automatically detects suicidal ideation or severe distress and provides emergency resources immediately.
 
 *Built with ❤️ for a healthier mind.*
