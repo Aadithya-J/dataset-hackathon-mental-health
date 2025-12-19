@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ACTIVITIES, AFFIRMATIONS } from '../constants';
+import { ACTIVITIES } from '../constants';
 import { Activity } from '../types';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -15,7 +15,6 @@ const ActivitiesView: React.FC = () => {
   const [timer, setTimer] = useState(0);
   const [subStepTimer, setSubStepTimer] = useState(0);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [encouragement, setEncouragement] = useState(AFFIRMATIONS[0]);
   const [journalText, setJournalText] = useState('');
   const [journalLogs, setJournalLogs] = useState<JournalEntry[]>([]);
   
@@ -86,7 +85,6 @@ const ActivitiesView: React.FC = () => {
     setSubStepTimer(0);
     setCurrentStepIndex(0);
     setJournalText('');
-    setEncouragement(AFFIRMATIONS[Math.floor(Math.random() * AFFIRMATIONS.length)]);
   };
 
   const saveJournalEntry = (text: string) => {
@@ -507,13 +505,8 @@ const ActivitiesView: React.FC = () => {
         </header>
 
         {activeActivity && (
-          <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center p-6 md:p-12 overflow-y-auto bg-background dark:bg-slate-950">
-            <div className="fixed top-0 left-0 right-0 px-6 pt-6 flex justify-center z-10">
-              <motion.div initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="bg-white/80 dark:bg-white/10 backdrop-blur-2xl border border-gray-200 dark:border-white/20 px-12 py-5 rounded-[3rem] text-text-primary dark:text-white font-bold text-lg text-center max-w-2xl shadow-lg">
-                {encouragement}
-              </motion.div>
-            </div>
-            <div className="w-full max-w-5xl flex flex-col items-center justify-center mt-24 mb-12">
+          <div className="fixed inset-0 z-[100] flex flex-col items-center justify-start p-4 overflow-y-auto bg-background dark:bg-slate-950">
+            <div className="w-full max-w-5xl flex flex-col items-center justify-start mt-4 mb-12">
               <h3 className="text-[10px] font-black text-accent-blue dark:text-indigo-500 uppercase tracking-[0.6em] mb-4">Protocol: {activeActivity.type}</h3>
               <h4 className="text-6xl font-black text-text-primary dark:text-white mb-16 text-center tracking-tighter uppercase">{activeActivity.title}</h4>
               {renderActiveUI()}
