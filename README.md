@@ -1,7 +1,7 @@
-# 🧠 Serenity AI - Mental Wellness Companion
+# 🧠 Companio AI - Mental Wellness Companion
 ### *Hackathon Submission 2025*
 
-**Serenity AI** is an advanced, empathetic AI companion designed to support mental wellness through real-time conversation, multimodal emotion detection, and personalized therapeutic rituals. It bridges the gap between casual journaling and professional therapy by providing immediate, data-driven emotional support.
+**COMPANIO AI** is an advanced, empathetic AI companion designed to support mental wellness through real-time conversation, multimodal emotion detection, and personalized therapeutic rituals. It bridges the gap between casual journaling and professional therapy by providing immediate, data-driven emotional support.
 
 ---
 
